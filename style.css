@@ -1,1 +1,177 @@
 
+/* The whole website */
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #E8D9FF;
+    color: #211344;
+}
+
+/* The purple navigation bar */
+.navbar {
+    background: linear-gradient(90deg, #8E79B8, #70559C);
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* The CJ World name */
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* The navigation links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+/* The page you are currently viewing */
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #F0E5FF;
+    color: #603C98;
+}
+
+/* The homepage layout */
+.home-container,
+.about-container {
+    min-height: 65vh;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The white-lavender cards */
+.welcome-card,
+.about-card {
+    background-color: rgba(255, 255, 255, 0.65);
+    width: 100%;
+    max-width: 850px;
+    padding: 45px 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Big page headings */
+h1 {
+    font-size: 48px;
+    margin: 0 0 12px;
+    color: #211344;
+}
+
+/* The smaller line under the homepage heading */
+.subtitle {
+    font-size: 21px;
+    color: #5C4387;
+    margin: 10px 0;
+}
+
+/* Decorative heart */
+.heart {
+    color: #A987E8;
+    font-size: 34px;
+    margin: 12px 0 24px;
+}
+
+/* The purple buttons */
+.button {
+    display: inline-block;
+    background-color: #8061B0;
+    color: white;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 30px;
+    font-size: 17px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #5F438D;
+}
+
+/* About Me paragraph */
+.about-text {
+    color: #282039;
+    font-size: 19px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* Paw prints */
+.paws {
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+/* Bottom of the website */
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    background-color: #D6C2F4;
+    color: #493567;
+    font-size: 14px;
+}
+
+/* Make the website fit phone screens */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 10px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .nav-links {
+        gap: 3px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        padding: 9px 10px;
+        font-size: 14px;
+    }
+
+    .home-container,
+    .about-container {
+        padding: 35px 15px;
+    }
+
+    .welcome-card,
+    .about-card {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    .about-text {
+        font-size: 17px;
+    }
+}
+
